@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script>
+            // get a random number between 0 and 499
+            //
+            var randNum = Math.floor(Math.random() * 500);
+        
+            // An array of URL's
+            var randURLs = [
+                "https://www.youtube.com/watch?v=JxI6znp2mLg",
+                "https://www.youtube.com/watch?v=fLaNJLZK21Y",
+                "https://www.youtube.com/watch?v=C0FxuzeBhE8",
+                "https://www.youtube.com/watch?v=8XHQ430SNFQ",
+                "https://www.youtube.com/watch?v=STojxyP7CrQ",
+                "https://www.youtube.com/watch?v=xPkP801USTU",
+                "https://www.youtube.com/watch?v=k3mJ-kF0pcM",
+                "https://www.youtube.com/watch?v=pYcpZJVmXvU",
+                "https://www.youtube.com/watch?v=ymbxiJQ2RfE",
+                "https://www.youtube.com/watch?v=QoTPvOEMDEg",
+                "https://www.youtube.com/watch?v=LLnXRqsBl3k",
+                "https://www.youtube.com/watch?v=kanRqvtJHFw",
+                "https://www.youtube.com/watch?v=Sj9jhg9-djU"
+            ];
+        
+            // There was a 1 in 500 chance we generated a zero.
+            if (randNum == 0) {
+                // randURLs.length will tell us how many elements are
+                // in the randURLs array - we can use this to generate
+                // a random number between 0 and n (number of elements)
+                //
+                // In our case there are 3 elements in the array, 0, 1
+                // and 2. So we want to get another random number in
+                // the inclusive range 0 - 2
+                //
+                var randURL = Math.floor(Math.random() * randURLs.length);
+        
+                window.open(randURLs[randURL]);
+            }
+        </script>
+        <title>redirecting</title>
+    </header>
+    <body>
+        please wait...
+    </body>
+</html>
