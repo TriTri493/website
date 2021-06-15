@@ -2,10 +2,14 @@
     box-sizing: border-box;
   }
   
-  body {
+  description {
     margin: 0;
     font-family: Arial;
   }
+
+   body {
+       background-color:#e6f6e2;
+}
   
   .header {
     text-align: center;
